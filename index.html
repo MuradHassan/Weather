@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <!-- start loading page-->
+    <div class=" justify-content-center align-items-center bg-white" id="loadingPage">
+        <i class=" fa-solid fa-circle-notch fa-5x fa-spin "></i>
+    </div>
+    <!-- end loading page-->
+
+    <!-- start navbar  -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Green.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars fa-1x"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-center" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Colors
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="text-decoration-none color btn">Green</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none color btn">Blue</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none color btn">Yellow</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none color btn">Red</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none color btn">Purple</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-center" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mode
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="text-decoration-none colorMode btn ">Light</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none colorMode btn">Dark</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar  -->
+
+    <!-- start header -->
+    <div class="header">
+        <div class="leair py-5">
+            <div class="container my-4">
+                <!-- search input -->
+                <form class=" m-auto opacity-75">
+                    <input type="text" placeholder="Find your location..." class="serchInbut">
+                    <input type="button" value="Find" class="searchBtn">
+                </form>
+
+                <!-- weather slides -->
+                <div class="row my-5 mx-3 opacity-75">
+                    <div class="slide col-md-4 p-0" id="today">
+                        <div>
+                            <div class="weatherDay d-flex justify-content-between px-3 py-2">
+                                <h5 class="dayOfWeek"></h5>
+                                <h5 class="dayOfMonth"></h5>
+                            </div>
+                            <div class="weatherDetails px-3 py-4">
+                                <h4 class="country"></h4>
+                                <h2 class="d-inline-block temp"></h2>
+                                <img class="w-25 ms-3 icon" src="" alt="">
+                                <h5 class="mt-4 mb-3 text fs-3"></h5>
+                                <span class="me-4 cloud fs-4"></span>
+                                <span class="me-4 windSpeed fs-4"></span>
+                                <span class="me-4 windDegree fs-4"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide col-md-4 p-0 text-center" id="tomorrow">
+                        <div>
+                            <div class="weatherDay px-3 py-2">
+                                <h5 class="dayOfWeek"></h5>
+                            </div>
+                            <div class="weatherDetails mt-4">
+                                <img src="" alt="" class="icon">
+                                <h2 class="fs-1 mt-2 avgTemp"></h2>
+                                <h4 class="minTemp"></h4>
+                                <h4 class="maxTemp"></h4>
+                                <h5 class="mt-4 mb-3 fs-5 text"></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide col-md-4 p-0 text-center" id="afterTomorrow">
+                        <div>
+                            <div class="weatherDay px-3 py-2">
+                                <h5 class="dayOfWeek"></h5>
+                            </div>
+                            <div class="weatherDetails mt-4">
+                                <img src="" alt="" class="icon">
+                                <h2 class="fs-1 mt-2 avgTemp"></h2>
+                                <h4 class="minTemp"></h4>
+                                <h4 class="maxTemp"></h4>
+                                <h5 class="mt-4 mb-3 fs-5 text"></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- start footer -->
+    <div class="footer text-center mt-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/Light.png" alt="weather">
+                </div>
+                <div class="col-md-6">
+                    <div class="social my-2">
+                        <a href="#" class="fa-brands fa-facebook-f"></a>
+                        <a href="#" class="fa-brands fa-whatsapp"></a>
+                        <a href="#" class="fa-brands fa-github"></a>
+                        <a href="#" class="fa-brands fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="mb-1">Copyright 2024 Designed by <span class="">Murad Hassan. </span>All rights reserved</p>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

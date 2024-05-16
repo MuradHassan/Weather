@@ -1,0 +1,189 @@
+:root {
+    --default-color: #033B3D;
+    --fontMode-color: #FBFAF8;
+    --backgroundMode-color: #1E202B;
+}
+
+body {
+    background-color: var(--backgroundMode-color);
+}
+
+/*start loading page*/
+#loadingPage {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+}
+
+body {
+    overflow: hidden;
+}
+
+#loadingPage svg {
+    color: var(--default-color);
+}
+/*end loading page*/
+
+/*navbar style*/
+.navbar img {
+    width: 80px;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: max-content;
+
+}
+
+.navbar ul {
+    background-color: var(--backgroundMode-color);
+}
+
+.nav-link {
+    border: 2px solid var(--default-color);
+    background-color: var(--default-color);
+    color: white;
+    border-radius: 15px;
+    padding: 1px;
+    margin: 2px;
+}
+
+.dropdown-menu li {
+    padding: 4px;
+    color: var(--fontMode-color);
+}
+
+.dropdown-menu li a {
+    border-radius: 25px;
+    width: 100%;
+    color: white;
+}
+
+.navbar-toggler {
+    border-radius: 50%;
+    padding: 15px;
+    color: var(--default-color);
+}
+
+.navbar-toggler:hover {
+    border-color: var(--default-color);
+    border-width: 2px;
+}
+
+/*header style*/
+.header {
+    background-image: url(../images/peakpx.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header .leair {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/*search style*/
+form {
+    width: 90%;
+    position: relative;
+}
+
+.serchInbut {
+    background-color: #1a1d20;
+    color: var(--fontMode-color);
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+    border: none;
+    outline: none
+}
+
+.searchBtn {
+    background-color: var(--default-color);
+    color: white;
+    border-radius: 25px;
+    width: 100px;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+
+}
+
+/* weather style */
+
+.header .slide {
+    border: 1px solid var(--default-color);
+    background-color: var(--backgroundMode-color);
+    color: var(--fontMode-color);
+}
+
+.weatherDay {
+    background-color: #1a1d20;
+}
+
+.header h5 {
+    font-size: 16px;
+}
+
+.header h2 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.header .weatherDetails h5 {
+    color: var(--default-color);
+    font-weight: bold;
+}
+
+/*footer style*/
+.footer img {
+    width: 200px;
+}
+
+.social svg {
+    font-size: 30px;
+    padding: 10px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: var(--default-color);
+    color: white;
+}
+
+.social .fa-facebook-f:hover {
+    background-color: #1877f2;
+    color: white;
+    transition-duration: .5s;
+}
+
+.social .fa-whatsapp:hover {
+    background-color: #25d366;
+    color: white;
+    transition-duration: .5s;
+}
+
+.social .fa-github:hover {
+    background-color: #f5f5f5;
+    color: #333;
+    transition-duration: .5s;
+}
+
+.social .fa-linkedin-in:hover {
+    background-color: #0a66c2;
+    color: white;
+    transition-duration: .5s;
+}
+
+.footer p {
+    color: var(--fontMode-color);
+}
+
+.footer span {
+    color: var(--default-color);
+    font-weight: bold;
+    font-size: 17px;
+}
