@@ -74,7 +74,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 async function getApi(a = 'cairo') {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=69fa4a92b847451781b140501241505&q=${a}&days=3&aqi=no&alerts=no`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=69fa4a92b847451781b140501241505&q=${a}&days=3&aqi=no&alerts=no`);
     let weatherApi = await response.json();
     weatherToday(weatherApi);
     weatherTomorrow(weatherApi);
